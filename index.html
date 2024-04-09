@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>CPRE 288 Quick Reference</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="">
+<style>
+    body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+        background-color: #C8102E;
+        color: white;
+        margin: 0;
+        padding: 10px;
+    }
+
+    table {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #ececec;
+    }
+
+    h2 {
+        margin-left: 10px;
+    }
+
+    h3 {
+        margin-left: 10px;
+    }
+</style>
+<script src=""></script>
+
+<body>
+    <div class="header" style="text-align: center;">
+        <h1 style="margin: 0; padding: 0;">CPRE 288 Spring 2024 Quick Reference</h1>
+    </div>
+    <h2>Registers</h2>
+    <h3>GPIO</h3>
+    <table width="100%">
+        <tr>
+            <th>
+                <span style="font-size:18px; text-decoration: underline;">Register Name</span>
+            </th>
+            <th>
+                <span style="font-size:18px; text-decoration: underline;">Datasheet Acronym</span>
+            </th>
+            <th>
+                <span style="font-size:18px; text-decoration: underline;">C Macro Name</span>
+            </th>
+            <th>
+                <span style="font-size:18px; text-decoration: underline;">Datasheet Page</span>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                GPIO Data
+            </th>
+            <th>
+                GPIODATA
+            </th>
+            <th>
+                GPIO_PORT<code>#</code>_DATA_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=662" target="_blank">662</a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                GPIO Direction
+            </th>
+            <th>
+                GPIODIR
+            </th>
+            <th>
+                GPIO_PORT<code>#</code>_DIR_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=663" target="_blank">663</a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                GPIO Digital Enable
+            </th>
+            <th>
+                GPIODEN
+            </th>
+            <th>
+                GPIO_PORT<code>#</code>_DEN_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=682" target="_blank">682</a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                GPIO Alternate Function Select
+            </th>
+            <th>
+                GPIOAFSEL
+            </th>
+            <th>
+                GPIO_PORT<code>#</code>_AFSEL_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=671" target="_blank">671</a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                GPIO Port Control
+            </th>
+            <th>
+                GPIOPCTL
+            </th>
+            <th>
+                GPIO_PORT<code>#</code>_PCTL_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=688" target="_blank">688</a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                GPIO Analog Mode Select
+            </th>
+            <th>
+                GPIOAMSEL
+            </th>
+            <th>
+                GPIO_PORT<code>#</code>_AMSEL_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=687" target="_blank">687</a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                GPIO Run Mode Clock Gating Control
+            </th>
+            <th>
+                RCGCGPIO
+            </th>
+            <th>
+                SYSCTL_RCGCGPIO_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=340" target="_blank">340</a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                GPIO Peripheral Ready
+            </th>
+            <th>
+                PRGPIO
+            </th>
+            <th>
+                SYSCTL_PRGPIO_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=406" target="_blank">406</a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                GPIO Interrupt Sense
+            </th>
+            <th>
+                GPIOIS
+            </th>
+            <th>
+                GPIO_PORT<code>#</code>_IS_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=664" target="_blank">664</a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                GPIO Interrupt Both Edges
+            </th>
+            <th>
+                GPIOIBE
+            </th>
+            <th>
+                GPIO_PORT<code>#</code>_IBE_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=665" target="_blank">665</a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                GPIO Interrupt Event
+            </th>
+            <th>
+                GPIOIEV
+            </th>
+            <th>
+                GPIO_PORT<code>#</code>_IEV_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=666" target="_blank">666</a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                GPIO Interrupt Mask
+            </th>
+            <th>
+                GPIOIM
+            </th>
+            <th>
+                GPIO_PORT<code>#</code>_IM_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=667" target="_blank">667</a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                GPIO Raw Interrupt Status
+            </th>
+            <th>
+                GPIORIS
+            </th>
+            <th>
+                GPIO_PORT<code>#</code>_RIS_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=668" target="_blank">668</a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                GPIO Masked Interrupt Status
+            </th>
+            <th>
+                GPIOMIS
+            </th>
+            <th>
+                GPIO_PORT<code>#</code>_MIS_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=669" target="_blank">669</a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                GPIO Interrupt Clear
+            </th>
+            <th>
+                GPIOICR
+            </th>
+            <th>
+                GPIO_PORT<code>#</code>_ICR_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=670" target="_blank">670</a>
+            </th>
+        </tr>
+    </table>
+    <h3>NVIC</h3>
+    <table width="100%">
+        <tr>
+            <th>
+                <span style="font-size:18px; text-decoration: underline;">Register Name</span>
+            </th>
+            <th>
+                <span style="font-size:18px; text-decoration: underline;">Datasheet Acronym</span>
+            </th>
+            <th>
+                <span style="font-size:18px; text-decoration: underline;">C Macro Name</span>
+            </th>
+            <th>
+                <span style="font-size:18px; text-decoration: underline;">Datasheet Page</span>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                NVIC Interrupt Set Enable
+            </th>
+            <th>
+                ENn
+            </th>
+            <th>
+                NVIC_EN<code>#</code>_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=142" target="_blank">142</a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                NVIC Interrupt Priority
+            </th>
+            <th>
+                PRIn
+            </th>
+            <th>
+                NVIC_PRI<code>#</code>_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=152" target="_blank">152</a>
+            </th>
+        </tr>
+    </table>
+    <h3>GPTM</h3>
+    <details style="border-radius: 5px; border-top: 1px solid lightgray; border-bottom: 1px solid lightgray;"><summary style="user-select: none; cursor: pointer; border: 1px solid lightgray; border-radius: 5px; margin: 10px; padding: 10px; box-shadow: 0 0 5px lightgray;">Click here for Timer A</summary>
+    <table width="100%">
+        <tr>
+            <th>
+                <span style="font-size:18px; text-decoration: underline;">Register Name</span>
+            </th>
+            <th>
+                <span style="font-size:18px; text-decoration: underline;">Datasheet Acronym</span>
+            </th>
+            <th>
+                <span style="font-size:18px; text-decoration: underline;">C Macro Name</span>
+            </th>
+            <th>
+                <span style="font-size:18px; text-decoration: underline;">Datasheet Page</span>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                GPTM Configuration
+            </th>
+            <th>
+                GPTMCFG
+            </th>
+            <th>
+                TIMER<code>#</code>_CFG_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=727" target="_blank">727</a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                GPTM Timer A Mode
+            </th>
+            <th>
+                GPTMTAMR
+            </th>
+            <th>
+                TIMER<code>#</code>_TAMR_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=729" target="_blank">729</a>
+            </th>
+        </tr>
+    </table>
+</details>
+</body>
+
+</html>
