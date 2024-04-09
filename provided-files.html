@@ -110,6 +110,19 @@
     .item-container:hover {
         scale: 1.1;
     }
+	
+	.section-title {
+		width: 100%;
+		border-bottom: 1px solid lightgray;
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+	
+	.section-title h2 {
+		margin: 0;
+		margin-left: 10px;
+		padding: 0;
+	}
 </style>
 <script src=""></script>
 
@@ -123,8 +136,7 @@
             ← Go back
         </div>
     </a>
-
-    <h2>Datasheets</h2>
+    <div class="section-title"><h2>Datasheets</h2></div>
     <div class="grid-container">
         <div class="grid-item">
             <a href="https://canvas.iastate.edu/courses/108258/files/25810977/" target="_blank">
@@ -182,6 +194,22 @@
             #PING-sensor a {
                 text-decoration: none;
             }
+			
+			#irobot {
+				width: 400px;
+				height: 300px;
+				background: white;
+				display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+			}
+			
+			#irobot img {
+				padding-bottom: 10px;
+				margin-bottom: 10px;
+				border-bottom: 2px solid #ececec;
+			}
         </style>
         <div class="grid-item">
             <a href="https://canvas.iastate.edu/courses/108258/files/25810851/" target="_blank">
@@ -211,7 +239,84 @@
                 </div>
             </a>
         </div>
+		<div class="grid-item">
+            <a style="color: black;" href="https://canvas.iastate.edu/courses/108258/files/25810856/" target="_blank">
+                <div class="item-container">
+                    <div id="irobot"><img style="filter: brightness(0)"
+                            src="https://edu.irobot.com/assets/img/logos/irobot-logo.svg"
+                            width="80%"><span style="font-size: 24px;">iRobot Create 2</span></div>
+                </div>
+            </a>
+        </div>
     </div>
+
+	<div class="section-title"><h2>Schematics</h2></div>
+	<style>
+	#cybot-baseboard-lcd-schematic {
+		width: 400px;
+		height: 300px;
+	}
+	
+	#cybot-baseboard-lcd-schematic p {
+		font-size: 18px;
+	}
+	
+	#cybot-baseboard-schematic {
+		width: 400px;
+		height: 300px;
+		font-size: 18px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	#cybot-lcd-schematic {
+		width: 400px;
+		height: 300px;
+		font-size: 18px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	</style>
+	<div class="grid-container">
+	<div class="grid-item"><div class="item-container"><a style="text-decoration: none; color: black;" href="https://canvas.iastate.edu/courses/108258/files/25811008/" target="_blank"><div id="cybot-baseboard-lcd-schematic"><img src="https://github.com/alex-pallan/cpre288-quick-reference/blob/main/images/cybot-transparent.png?raw=true" width="70%"><p>Cybot Baseboard/LCD Schematic</p></div></a></div></div>
+	<div class="grid-item"><div class="item-container"><a style="text-decoration: none; color: black;" href="https://canvas.iastate.edu/courses/108258/files/25810949/" target="_blank"><div id="cybot-baseboard-schematic"><img src="https://www.stockvault.net/data/2015/03/23/169600/preview16.jpg" width="70%"><p>Cybot Baseboard Schematic</p></div></a></div></div>
+	<div class="grid-item"><div class="item-container"><a style="text-decoration: none; color: black;" href="https://canvas.iastate.edu/courses/108258/files/25810973/" target="_blank"><div id="cybot-lcd-schematic"><img src="https://github.com/alex-pallan/cpre288-quick-reference/blob/main/images/lcd-baseboard.png?raw=true" width="80%"><p>Cybot LCD Schematic</p></div></a></div></div>
+
+	</div>
+	
+	<style>
+	#putty-uart {
+		width: 400px;
+		height: 300px;
+		font-size: 18px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	#servo-calibration {
+		width: 400px;
+		height: 300px;
+		font-size: 18px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	</style>
+	
+	<div class="section-title"><h2>Quick Setup Guides</h2></div>
+	<div class="grid-container">
+	<div class="grid-item"><div class="item-container"><a style="text-decoration: none; color: black;" href="https://canvas.iastate.edu/courses/108258/files/25810961/" target="_blank"><div id="putty-uart"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/PuTTY_Icon.svg/800px-PuTTY_Icon.svg.png" width="50%"><p>PuTTY/UART Quick Setup Guide</p></div></a></div></div>
+	<div class="grid-item"><div class="item-container"><a style="text-decoration: none; color: black;" href="https://canvas.iastate.edu/courses/108258/files/25811014/" target="_blank"><div id="servo-calibration"><img src="https://github.com/alex-pallan/cpre288-quick-reference/blob/main/images/standard-servo.png?raw=true" width="60%"><p>Servo Calibration Guide</p></div></a></div></div>
+	<div class="grid-item"><div class="item-container"><a style="text-decoration: none; color: black;" href="https://canvas.iastate.edu/courses/108258/files/25811015/" target="_blank"><div id="cybot-lcd-schematic"><img src="https://github.com/alex-pallan/cpre288-quick-reference/blob/main/images/PicoScope.png?raw=true" width="70%"><p>PicoScope Setup Guide</p></div></a></div></div>
+
+	</div>
 
     <div class="footer">
         <p>Created by Alex</p><br>
