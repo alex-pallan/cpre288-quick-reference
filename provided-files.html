@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Provided Files</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" type="image/x-icon" href="https://win98icons.alexmeub.com/icons/png/expansion_board-1.png">
+<link rel="stylesheet" href="">
+<style>
+    body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+        background-color: #C8102E;
+        color: white;
+        margin: 0;
+        padding: 10px;
+    }
+
+    table {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #ececec;
+    }
+
+    h2 {
+        margin-left: 10px;
+    }
+
+    h3 {
+        margin-left: 10px;
+    }
+
+    .back-button {
+        text-align: center;
+        background-color: #ececec;
+        border-bottom: 1px solid lightgray;
+        user-select: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        transition: 0.1s;
+    }
+
+    .back-button:hover {
+        background-color: lightgray;
+    }
+
+    .footer {
+        text-align: center;
+        font-size: 12px;
+        background-color: lightgray;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        margin-top: 30px;
+    }
+
+    .footer p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+    }
+
+    .grid-container a {
+        text-decoration: none;
+    }
+
+    .grid-item {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .item-container {
+        background: #ececec;
+        border: 1px solid lightgray;
+        width: fit-content;
+        padding: 10px;
+        border-radius: 15px;
+        transition: 0.25s;
+    }
+
+    .item-container:hover {
+        scale: 1.1;
+    }
+</style>
+<script src=""></script>
+
+<body>
+    <div class="header" style="text-align: center;">
+        <h1 style="margin: 0; padding: 0;">Provided Files</h1>
+    </div>
+    <a style="text-decoration: none; color: black;" href="https://alex-pallan.github.io/cpre288-quick-reference/"
+        target="_self">
+        <div class="back-button">
+            ← Go back
+        </div>
+    </a>
+
+    <h2>Datasheets</h2>
+    <div class="grid-container">
+        <div class="grid-item">
+            <a href="https://canvas.iastate.edu/courses/108258/files/25810977/" target="_blank">
+                <div class="item-container">
+                    <div id="tiva-datasheet">
+                        <table width="100%" height="100%">
+                            <tr>
+                                <th width="50%"><img style="filter: brightness(0) invert(1);" width="100%"
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/TexasInstruments-Logo.svg/2560px-TexasInstruments-Logo.svg.png">
+                                </th>
+                                <th style="text-align: left; font-weight: 100; font-size: 24px;">Tiva TM4C123GH6PM
+                                    Microcontroller Datasheet</th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <style>
+            #tiva-datasheet {
+                background: red;
+                width: 400px;
+                height: 300px;
+                color: white;
+                user-select: none;
+            }
+
+            #IR-sensor {
+                background: white;
+                width: 400px;
+                height: 300px;
+                color: black;
+                border: 2px solid black;
+                border-radius: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                user-select: none;
+            }
+
+            #PING-sensor {
+                width: 400px;
+                height: 294px;
+                background: white;
+                border-top: 3px solid black;
+                border-bottom: 3px solid black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                user-select: none;
+            }
+
+            #PING-sensor a {
+                text-decoration: none;
+            }
+        </style>
+        <div class="grid-item">
+            <a href="https://canvas.iastate.edu/courses/108258/files/25810851/" target="_blank">
+                <div class="item-container">
+                    <div id="IR-sensor"><img width="60%" style="filter: brightness(0)"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Sharp-Logo.svg/2560px-Sharp-Logo.svg.png"><span
+                            style="font-size: 24px;">Distance Measuring Sensor<br>(IR Sensor)</span></div>
+                </div>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a style="color: black;" href="https://canvas.iastate.edu/courses/108258/files/25810866/" target="_blank">
+            <div class="item-container">
+                <div id="PING-sensor"><img style="filter: brightness(0)"
+                        src="https://github.com/alex-pallan/cpre288-quick-reference/blob/main/images/Parallax-Inc-distributor-removebg-preview.png?raw=true"
+                        width="70%"><span style="font-size: 24px;">Ping))) Ultrasonic<br>Distance Sensor</span></div>
+            </div>
+            </a>
+        </div>
+        <div class="grid-item" style="padding-top: 30px;">
+            <a style="color: black;" href="https://canvas.iastate.edu/courses/108258/files/25810991/" target="_blank">
+            <div class="item-container">
+                <div id="PING-sensor"><img style="filter: brightness(0)"
+                        src="https://github.com/alex-pallan/cpre288-quick-reference/blob/main/images/Parallax-Inc-distributor-removebg-preview.png?raw=true"
+                        width="70%"><span style="font-size: 24px;">Parallax Standard Servo</span></div>
+            </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Created by Alex</p><br>
+        <p>I <b>am not</b> affiliated with the <a href="https://www.ece.iastate.edu/" target="_blank">ISU Department of
+                Electrical and Computer Engineering</a>.</p><br>
+        <p>This is my own compilation of class resources, I do not claim this to be 100% accurate, nor did I take
+            anything outside what was provided in Canvas.</p>
+    </div>
+</body>
+
+</html>
