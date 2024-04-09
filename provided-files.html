@@ -71,6 +71,22 @@
         grid-template-columns: 33.3% 33.3% 33.3%;
     }
 
+    /* Media query to change grid to 2 columns on smaller screens */
+    @media screen and (max-width: 1280px) {
+        .grid-container {
+            grid-template-columns: 50% 50%;
+            /* Two columns */
+        }
+    }
+
+    /* Media query to change grid to 1 column on even smaller screens */
+    @media screen and (max-width: 850px) {
+        .grid-container {
+            grid-template-columns: 100%;
+            /* One column */
+        }
+    }
+
     .grid-container a {
         text-decoration: none;
     }
@@ -79,6 +95,7 @@
         text-align: center;
         display: flex;
         justify-content: center;
+        padding-bottom: 30px;
     }
 
     .item-container {
@@ -177,20 +194,21 @@
         </div>
         <div class="grid-item">
             <a style="color: black;" href="https://canvas.iastate.edu/courses/108258/files/25810866/" target="_blank">
-            <div class="item-container">
-                <div id="PING-sensor"><img style="filter: brightness(0)"
-                        src="https://github.com/alex-pallan/cpre288-quick-reference/blob/main/images/Parallax-Inc-distributor-removebg-preview.png?raw=true"
-                        width="70%"><span style="font-size: 24px;">Ping))) Ultrasonic<br>Distance Sensor</span></div>
-            </div>
+                <div class="item-container">
+                    <div id="PING-sensor"><img style="filter: brightness(0)"
+                            src="https://github.com/alex-pallan/cpre288-quick-reference/blob/main/images/Parallax-Inc-distributor-removebg-preview.png?raw=true"
+                            width="70%"><span style="font-size: 24px;">Ping))) Ultrasonic<br>Distance Sensor</span>
+                    </div>
+                </div>
             </a>
         </div>
-        <div class="grid-item" style="padding-top: 30px;">
+        <div class="grid-item">
             <a style="color: black;" href="https://canvas.iastate.edu/courses/108258/files/25810991/" target="_blank">
-            <div class="item-container">
-                <div id="PING-sensor"><img style="filter: brightness(0)"
-                        src="https://github.com/alex-pallan/cpre288-quick-reference/blob/main/images/Parallax-Inc-distributor-removebg-preview.png?raw=true"
-                        width="70%"><span style="font-size: 24px;">Parallax Standard Servo</span></div>
-            </div>
+                <div class="item-container">
+                    <div id="PING-sensor"><img style="filter: brightness(0)"
+                            src="https://github.com/alex-pallan/cpre288-quick-reference/blob/main/images/Parallax-Inc-distributor-removebg-preview.png?raw=true"
+                            width="70%"><span style="font-size: 24px;">Parallax Standard Servo</span></div>
+                </div>
             </a>
         </div>
     </div>
