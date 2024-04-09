@@ -3,6 +3,7 @@
 <meta charset="UTF-8">
 <title>CPRE 288 Quick Reference</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" type="image/x-icon" href="https://win98icons.alexmeub.com/icons/png/expansion_board-1.png">
 <link rel="stylesheet" href="">
 <style>
     body {
@@ -40,6 +41,7 @@
 <body>
     <div class="header" style="text-align: center;">
         <h1 style="margin: 0; padding: 0;">CPRE 288 Spring 2024 Quick Reference</h1>
+        <p style="margin: 0; padding: 0;"><small>*for links to pages to work, please use <a href="https://www.google.com/chrome/" target="_self" style="text-decoration: none; color: inherit;"><b>Google Chrome</b></a></small></p>
     </div>
     <h2>Registers</h2>
     <h3>GPIO</h3>
@@ -315,7 +317,6 @@
         </tr>
     </table>
     <h3>GPTM</h3>
-    <details style="border-radius: 5px; border-top: 1px solid lightgray; border-bottom: 1px solid lightgray;"><summary style="user-select: none; cursor: pointer; border: 1px solid lightgray; border-radius: 5px; margin: 10px; padding: 10px; box-shadow: 0 0 5px lightgray;">Click here for Timer A</summary>
     <table width="100%">
         <tr>
             <th>
@@ -347,6 +348,121 @@
         </tr>
         <tr>
             <th>
+                GPTM Control
+            </th>
+            <th>
+                GPTMCTL
+            </th>
+            <th>
+                TIMER<code>#</code>_CTL_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=737" target="_blank">737</a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                GPTM Timer Run Mode Clock Gating Control
+            </th>
+            <th>
+                RCGCTIMER
+            </th>
+            <th>
+                SYSCTL_RCGCTIMER_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=338" target="_blank">338</a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                GPTM Peripheral Ready
+            </th>
+            <th>
+                PRTIMER
+            </th>
+            <th>
+                SYSCTL_PRTIMER_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=404" target="_blank">404</a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                GPTM Interrupt Mask
+            </th>
+            <th>
+                GPTMIMR
+            </th>
+            <th>
+                TIMER<code>#</code>_IMR_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=745" target="_blank">745</a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                GPTM Raw Interrupt Status
+            </th>
+            <th>
+                GPTMRIS
+            </th>
+            <th>
+                TIMER<code>#</code>_RIS_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=748" target="_blank">748</a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                GPTM Masked Interrupt Status
+            </th>
+            <th>
+                GPTMMIS
+            </th>
+            <th>
+                TIMER<code>#</code>_MIS_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=751" target="_blank">751</a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                GPTM Interrupt Clear
+            </th>
+            <th>
+                GPTMICR
+            </th>
+            <th>
+                TIMER<code>#</code>_ICR_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=754" target="_blank">754</a>
+            </th>
+        </tr>
+    </table>
+    <details style="border-top: 1px solid lightgray; border-bottom: 1px solid lightgray;"><summary style="user-select: none; cursor: pointer; border: 1px solid lightgray; border-radius: 5px; margin: 10px; padding: 10px; box-shadow: 0 0 5px lightgray;">Click here for Timer <b>A</b></summary>
+    <table width="100%">
+        <tr>
+            <th>
+                <span style="font-size:18px; text-decoration: underline;">Register Name</span>
+            </th>
+            <th>
+                <span style="font-size:18px; text-decoration: underline;">Datasheet Acronym</span>
+            </th>
+            <th>
+                <span style="font-size:18px; text-decoration: underline;">C Macro Name</span>
+            </th>
+            <th>
+                <span style="font-size:18px; text-decoration: underline;">Datasheet Page</span>
+            </th>
+        </tr>
+        <tr>
+            <th>
                 GPTM Timer A Mode
             </th>
             <th>
@@ -359,8 +475,207 @@
                 <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=729" target="_blank">729</a>
             </th>
         </tr>
+        <tr>
+            <th>
+                GPTM Timer A Interval Load
+            </th>
+            <th>
+                GPTMTAILR
+            </th>
+            <th>
+                TIMER<code>#</code>_TAILR_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=756" target="_blank">756</a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                GPTM Timer A Match
+            </th>
+            <th>
+                GPTMTAMATCHR
+            </th>
+            <th>
+                TIMER<code>#</code>_TAMATCHR_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=758" target="_blank">758</a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                GPTM Timer A Prescale
+            </th>
+            <th>
+                GPTMTAPR
+            </th>
+            <th>
+                TIMER<code>#</code>_TAPR_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=760" target="_blank">760</a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                GPTM Timer A Prescale Match
+            </th>
+            <th>
+                GPTMTAPMR
+            </th>
+            <th>
+                TIMER<code>#</code>_TAPMR_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=762" target="_blank">762</a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                GPTM Timer A
+            </th>
+            <th>
+                GPTMTAR
+            </th>
+            <th>
+                TIMER<code>#</code>_TAR_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=764" target="_blank">764</a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                GPTM Timer A Value
+            </th>
+            <th>
+                GPTMTAV
+            </th>
+            <th>
+                TIMER<code>#</code>_TAV_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=766" target="_blank">766</a>
+            </th>
+        </tr>
+    </table>
+</details>
+<details style="border-top: 1px solid lightgray; border-bottom: 1px solid lightgray;"><summary style="user-select: none; cursor: pointer; border: 1px solid lightgray; border-radius: 5px; margin: 10px; padding: 10px; box-shadow: 0 0 5px lightgray;">Click here for Timer <b>B</b></summary>
+    <table width="100%">
+        <tr>
+            <th>
+                <span style="font-size:18px; text-decoration: underline;">Register Name</span>
+            </th>
+            <th>
+                <span style="font-size:18px; text-decoration: underline;">Datasheet Acronym</span>
+            </th>
+            <th>
+                <span style="font-size:18px; text-decoration: underline;">C Macro Name</span>
+            </th>
+            <th>
+                <span style="font-size:18px; text-decoration: underline;">Datasheet Page</span>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                GPTM Timer B Mode
+            </th>
+            <th>
+                GPTMTBMR
+            </th>
+            <th>
+                TIMER<code>#</code>_TBMR_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=733" target="_blank">733</a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                GPTM Timer B Interval Load
+            </th>
+            <th>
+                GPTMTBILR
+            </th>
+            <th>
+                TIMER<code>#</code>_TBILR_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=757" target="_blank">757</a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                GPTM Timer B Match
+            </th>
+            <th>
+                GPTMTBMATCHR
+            </th>
+            <th>
+                TIMER<code>#</code>_TBMATCHR_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=759" target="_blank">759</a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                GPTM Timer B Prescale
+            </th>
+            <th>
+                GPTMTBPR
+            </th>
+            <th>
+                TIMER<code>#</code>_TBPR_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=761" target="_blank">761</a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                GPTM Timer B Prescale Match
+            </th>
+            <th>
+                GPTMTBPMR
+            </th>
+            <th>
+                TIMER<code>#</code>_TBPMR_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=763" target="_blank">763</a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                GPTM Timer B
+            </th>
+            <th>
+                GPTMTBR
+            </th>
+            <th>
+                TIMER<code>#</code>_TBR_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=765" target="_blank">765</a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                GPTM Timer B Value
+            </th>
+            <th>
+                GPTMTBV
+            </th>
+            <th>
+                TIMER<code>#</code>_TBV_R
+            </th>
+            <th>
+                <a href="https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf#page=767" target="_blank">767</a>
+            </th>
+        </tr>
     </table>
 </details>
 </body>
-
 </html>
